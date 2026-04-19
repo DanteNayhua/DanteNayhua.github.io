@@ -132,3 +132,45 @@ footer p {
     font-size: 18px;
    
 }
+/* Layout básico */
+.contenedor1 {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.contenido-central {
+    display: flex; /* Para poner section y aside lado a lado */
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+main { flex: 3; }
+aside { flex: 1; min-width: 250px; background: #11e0e7; padding: 15px; }
+
+/* Menú de navegación */
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    background: #333;
+    justify-content: space-around;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+}
+
+/* RESPONSIVE: Si la pantalla es pequeña, se apila todo */
+@media (max-width: 768px) {
+    .contenido-central {
+        flex-direction: column;
+    }
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+}

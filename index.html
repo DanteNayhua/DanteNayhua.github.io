@@ -1,67 +1,90 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aprendiendo CSS y HTML</title>
-    <!-- VINCULA EL ARCHIVO CSS CON HTML  -->
-    <LINK rel="stylesheet" href="miniproyectoccs.css">
-  
+    <title>Dante Nayhua - Programación Web</title>
+    <link rel="stylesheet" href="miniproyectoccs.css">
 </head>
 <body>
     <div class="contenedor1">
-         <!--cabcera de la pagina web  -->
         <header>
-                <h1>Dante Nayhua Huaman</h1>
-                <p>Alumno del Curso de Programación Web</p>
+            <h1>Dante Nayhua Huaman</h1>
+            <p>Alumno de Ingeniería de Sistemas | UTEA</p>
         </header>
+
         <nav>
             <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#Docente">Docente</a></li>
-                <li><a href="#Curso">Curso</a></li>
-                <li><a href="#Universidad">Universidad</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="biografia.html">Biografía</a></li>
+                <li><a href="familia.html">Familia</a></li>
+                <li><a href="experiencias.html">Estudios</a></li>
+                <li><a href="materiales.html">Curso Web</a></li>
+                <li><a href="album.html">Álbum</a></li>
+                <li><a href="descargas.html">Descargas</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
             </ul>
         </nav>
 
         <div class="contenido-central">
-             <section>
-                    <h2>Información principal</h2>
-                <article>
-                    <h3>Datos del alumno</h3> 
-                    <p>El alumno Dante Nayhua Huaman alumno del curso de Programación Web,
-                         dedicado y comprometido en aprender todo lo posible en el curso.</p>
-                 
-                </article>
-                <article>
-                    <h3>Datos institucionales</h3>
-                    <p>Universidad Tecnológica de los Andes
-                        Escuela Profesional de Ingeniería de Sistemas</p>
-                </article>
-                <article>
-                    <h3>Descripción del curso</h3>
-                    <p>El curso desarrolla competencias en HTML5 y CSS3 para la creación de sitios web.
-                    </p>
-                </article>
-            </section>  
-<aside>
-    <h3>Información adicional</h3>
-  <!-- buscardor formulario -->
-<div class="buscador">
-    <h4>Buscador</h4>
-        <input type="text" placeholder="Escribe tu búsqueda...">
-        <button type="submit">Buscar</button>
+            <main>
+                <section id="inicio">
+                    <h2>Bienvenidos a mi Proyecto Web</h2>
+                    <article>
+                        <h3>Introducción</h3> 
+                        <p>Esta plataforma ha sido diseñada para el curso de <strong>Programación Web</strong>. 
+                        Aquí encontrarás información sobre mi vida académica, personal y recursos útiles de desarrollo web.</p>
+                        
+                        <p>Visita el sitio oficial de mi universidad: 
+                            <a href="https://utea.edu.pe/" target="_blank">UTEA Virtual</a>
+                        </p>
+                    </article>
+
+                    <article>
+                        <h3>Secciones Destacadas</h3>
+                        <ul>
+                            <li><strong>Materiales:</strong> Aprende sobre HTML5 y CSS3.</li>
+                            
+                        </ul>
+                    </article>
+                    <article>
+                        <h3>Secciones Destacadas</h3>
+                        <ul>
+                    
+                            <li><strong>Multimedia:</strong> Mira mi galería de fotos y video de presentación.</li>
+                        </ul>
+                    </article>
+                    <article>
+                        <h3>Secciones Destacadas</h3>
+                        <ul>
+                    
+                            <li><strong>Biografia:</strong> Conoceme.</li>
+                        </ul>
+                    </article>
+                </section>
+            </main>
+
+            <aside>
+                <h3>Panel Lateral</h3>
+                <div class="buscador">
+                    <h4>Buscador</h4>
+                    <form action="https://www.google.com/search" method="GET" target="_blank">
+                        <input type="text" name="q" placeholder="Buscar en la web...">
+                        <button type="submit">Buscar</button>
+                    </form>
+                </div>
+                <div class="recursos-rapidos">
+                    <h4>Enlaces Externos</h4>
+                    <a href="https://www.w3schools.com" target="_blank">W3Schools (Referencia)</a>
+                </div>
+            </aside>
+        </div>
+
+        <footer>
+            <p>Universidad Tecnológica de los Andes</p>
+            <p>Escuela Profesional de Ingeniería de Sistemas</p>
+            <p>&copy; 2026 - Dante Nayhua Huaman</p>
+        </footer>
     </div>
-
-    </aside>
-</div>
-
-<footer>
-    <p>Universidad Tecnológica de los Andes</p>
-    <p>Escuela Profesional de Ingeniería de Sistemas</p>
-    <p>&copy; 2026 - Programación Web</p>
-</footer>
-</div>  
 </body>
 </html>
